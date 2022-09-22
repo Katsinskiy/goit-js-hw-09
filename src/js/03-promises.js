@@ -7,9 +7,7 @@ function onSubmitForm(event) {
   const {
     elements: { delay, step, amount },
   } = event.currentTarget;
-  // console.log(
-  //   `First delay: ${delay.value}, Delay step: ${step.value}, Amount: ${amount.value}`
-  // );
+  
   let delayStep = Number(delay.value);
 
   for (let i = 0; i < amount.value; i += 1) {
